@@ -44,7 +44,7 @@ class ItbitService extends ClientAwareService implements ExchangeServiceInterfac
     {
         $response = $this->getClient()->request(
             'GET',
-            '/markets/XBTUSD/ticker/'
+            '/markets/XBTUSD/ticker'
         );
 
         $responseJson = json_decode($response->getBody()->getContents());
