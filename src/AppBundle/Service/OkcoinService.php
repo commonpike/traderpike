@@ -40,6 +40,7 @@ class OkcoinService extends ClientAwareService implements ExchangeServiceInterfa
      */
     public function getTicker():? TickerDTO
     {
+        // https://github.com/amandris/arbitrage-trading-bot/issues/18
         $response = $this->getClient()->request(
             'GET',
             '/ticker.do?symbol=btc_usd'
