@@ -70,8 +70,8 @@ class BitstampHelper
             $this->secret = $secret;
             $this->client_id = $client_id;
             $this->base_uri = $base_uri;
-        } else
-            die("No key/secret/client_id");
+        } //else
+            //die("No key/secret/client_id");
     }
 
     /**
